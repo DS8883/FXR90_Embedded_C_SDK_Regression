@@ -1,0 +1,143 @@
+#include <windows.h>
+#include "Common.h"
+#include "APITest.h"
+
+extern struct RFID3DATA api3Data;
+DWORD ThreadStartCount = 0;
+DWORD ThreadEndCount = 0;
+
+DWORD WINAPI ThreadRead( LPVOID lParam)
+{
+	fprintf(api3Data.fpStressLog, "\n ThreadRead Created , Totla Thread Count is : %d\n",ThreadStartCount++ );
+	LPTAG_DATA pMyTagData = ( LPTAG_DATA )lParam;
+	READ_ACCESS_PARAMS rParams = { MEMORY_BANK_RESERVED,0,0,0,0 };
+	{
+
+		api3Data.rfidStatus = RFID_Read( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&rParams,NULL,&api3Data.pInfo,pMyTagData,0);
+		Print2Console(pMyTagData->antennaID,pMyTagData->CRC,pMyTagData->PC, pMyTagData->XPC,TEXT(" Thread Read on MEMORY_BANK_RESERVED") ,pMyTagData->pTagID,pMyTagData->tagIDLength );
+	}
+	{
+		rParams.memoryBank = MEMORY_BANK_TID;
+		api3Data.rfidStatus = RFID_Read( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&rParams,NULL,&api3Data.pInfo,pMyTagData,0);
+		Print2Console( pMyTagData->antennaID,pMyTagData->CRC,pMyTagData->PC, pMyTagData->XPC,TEXT(" Thread Read on MEMORY_BANK_TID") ,pMyTagData->pTagID,pMyTagData->tagIDLength );
+	}
+	{
+		rParams.memoryBank = MEMORY_BANK_USER;
+		api3Data.rfidStatus = RFID_Read( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&rParams,NULL,&api3Data.pInfo,pMyTagData,0);
+		Print2Console( pMyTagData->antennaID,pMyTagData->CRC,pMyTagData->PC, pMyTagData->XPC,TEXT(" Thread Read on MEMORY_BANK_USER"),pMyTagData->pTagID,pMyTagData->tagIDLength );
+	}
+	fprintf(api3Data.fpStressLog, "\n\n Thread end , Count :%d",ThreadEndCount++);
+	return TRUE;
+}
+
+DWORD WINAPI ThreadWrite( LPVOID lParam)
+{
+	fprintf(api3Data.fpStressLog, "\n Thread Write Created , Totla Thread Count is : %d\n",ThreadStartCount++ );
+
+	LPTAG_DATA pMyTagData = ( LPTAG_DATA )lParam;
+	UINT8 writeData[12] = {0x10,0x00,0x20,0x00,0xAA,0xBB,0xCC,0XDD,0xFF,0xFF,0xFF,0xFF };
+	WRITE_ACCESS_PARAMS wParams = { MEMORY_BANK_RESERVED,0,writeData,4,0,0};
+	{
+
+		api3Data.rfidStatus = RFID_Write( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&wParams,NULL,&api3Data.pInfo,NULL );
+		ERROR_INFO einfo;
+		RFID_GetLastErrorInfo( api3Data.hReader, &einfo );
+		fprintf(api3Data.fpStressLog, "\n WriteStatus from ThreadWrite for MEMORY_BANK_RESERVED %d,%S\n",api3Data.rfidStatus,einfo.vendorMessage );
+	}
+	{
+		wParams.memoryBank = MEMORY_BANK_USER;
+		wParams.writeDataLength = 12;
+		api3Data.rfidStatus = RFID_Write( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&wParams,NULL,&api3Data.pInfo,NULL );
+		ERROR_INFO einfo;
+		RFID_GetLastErrorInfo( api3Data.hReader, &einfo );
+		fprintf(api3Data.fpStressLog, "\n WriteStatus from ThreadWrite for MEMORY_BANK_USER %d,%S\n",api3Data.rfidStatus,einfo.vendorMessage );
+	}
+	{
+		wParams.writeDataLength = 4;
+		wParams.memoryBank = MEMORY_BANK_EPC;
+		api3Data.rfidStatus = RFID_Write( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&wParams,NULL,&api3Data.pInfo,NULL );
+		ERROR_INFO einfo;
+		RFID_GetLastErrorInfo( api3Data.hReader, &einfo );
+		fprintf(api3Data.fpStressLog, "\n WriteStatus from ThreadWrite for MEMORY_BANK_EPC %d,%S\n",api3Data.rfidStatus,einfo.vendorMessage );
+	}
+
+	fprintf(api3Data.fpStressLog, "\n\n Thread end , Count :%d",ThreadEndCount++);
+	return TRUE;
+}
+
+DWORD WINAPI ThreadUnLock( LPVOID lParam )
+{
+	fprintf(api3Data.fpStressLog, "\n ThreadUnLock Created , Totla Thread Count is : %d\n",ThreadStartCount++ );
+	LPTAG_DATA pMyTagData = ( LPTAG_DATA )lParam;
+	LOCK_ACCESS_PARAMS lockParams;
+	READ_ACCESS_PARAMS rParams = { MEMORY_BANK_RESERVED,4,0,0,0};
+	api3Data.rfidStatus = RFID_Read( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&rParams,0,&api3Data.pInfo,pMyTagData,0 );
+
+	lockParams.privilege[ LOCK_USER_MEMORY ] = LOCK_PRIVILEGE_UNLOCK;
+	lockParams.privilege[ LOCK_EPC_MEMORY ] = LOCK_PRIVILEGE_UNLOCK;
+	lockParams.privilege[ LOCK_ACCESS_PASSWORD ] = LOCK_PRIVILEGE_UNLOCK;
+	lockParams.privilege[ LOCK_KILL_PASSWORD ] = LOCK_PRIVILEGE_UNLOCK;
+	lockParams.accessPassword = (pMyTagData->pMemoryBankData[0] << 24) + (pMyTagData->pMemoryBankData[1] << 16) + (pMyTagData->pMemoryBankData[2] << 8) +
+	pMyTagData->pMemoryBankData[3];
+	
+	api3Data.rfidStatus = RFID_Lock( api3Data.hReader,pMyTagData->pTagID,pMyTagData->tagIDLength,&lockParams,NULL,&api3Data.pInfo,NULL );
+	fprintf(api3Data.fpStressLog, "\n RFID_Lock() Status from  ThreadUnLock %d\n",api3Data.rfidStatus );
+	fprintf(api3Data.fpStressLog, "\n\n Thread end , Count :%d",ThreadEndCount++);
+	return TRUE;
+}
+
+
+void TestThreadSafeSingleReader( void )
+{
+	RFID_STATUS Status;	
+	TRIGGER_INFO triggerInfo;
+	DWORD dwThreadID;
+	TAG_DATA TagData[100];
+	LPTAG_DATA pgTagData;
+
+	triggerInfo.tagReportTrigger	= 0; // Report back all read tags after 3 rounds of inventory).
+	triggerInfo.startTrigger.type	= START_TRIGGER_TYPE_IMMEDIATE;
+	triggerInfo.stopTrigger.type	= STOP_TRIGGER_TYPE_DURATION;
+	triggerInfo.stopTrigger.value.duration = 5000; 
+	if( api3Data.apiVersion ==  RFID_API3_5_1 )
+	{
+		triggerInfo.lpTagEventReportInfo = NULL;
+	}
+	//triggerInfo.lpTagEventReportInfo = NULL;
+	// TEST with Simple Write Operations without AnyFilters 
+
+	Status = RFID_PerformInventory(api3Data.hReader,NULL,&api3Data.pInfo,&triggerInfo,NULL );
+	Sleep( 5100 );
+
+	Status = RFID_StopInventory( api3Data.hReader );	
+	int Cnt = 0;
+	pgTagData = &(TagData[Cnt]);
+	pgTagData = RFID_AllocateTag( api3Data.hReader );
+	while( ( api3Data.rfidStatus = RFID_GetReadTag(api3Data.hReader, pgTagData )) == RFID_API_SUCCESS  )
+	{		
+		HANDLE h1,h2,h3;
+		h3 = CreateThread(NULL,0,ThreadUnLock,(PVOID)pgTagData,0,&dwThreadID);
+		h1 = CreateThread(NULL,0,ThreadRead,(PVOID)pgTagData,0,&dwThreadID);
+		h2 = CreateThread(NULL,0,ThreadWrite,(PVOID)pgTagData,0,&dwThreadID);
+		pgTagData = &(TagData[Cnt++]);
+		pgTagData= RFID_AllocateTag( api3Data.hReader);
+	}
+
+	while( ThreadStartCount != ThreadEndCount )
+	{
+		Sleep( 5000 );
+		fprintf(api3Data.fpStressLog, "\n\n Thread Start Count :%d Thread End Count :%d", ThreadStartCount,ThreadEndCount );
+	}
+	
+	Cnt = 0;
+	
+	do
+	{
+		pgTagData = &(TagData[Cnt]);
+		api3Data.rfidStatus = RFID_DeallocateTag( api3Data.hReader, pgTagData );
+		Cnt++;
+	}while( api3Data.rfidStatus == RFID_API_SUCCESS );
+
+	fprintf(api3Data.fpStressLog, "\n\n Thread Start Count :%d Thread End Count :%d", ThreadStartCount,ThreadEndCount );
+	
+}

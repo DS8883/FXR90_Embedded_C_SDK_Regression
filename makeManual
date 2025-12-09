@@ -1,0 +1,213 @@
+##
+## Makefile for unittestapp executable for Thredbo
+##
+
+
+include ./common.mk
+
+
+ifneq ($(MAKECMDGOALS),linux64_clean)
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+endif
+
+
+
+### Edit this section for a new project : start #####
+PRJNAME					:=embdLnxMan
+BUILDDIR				:=
+OSBUILDDIR				:=
+### Edit this section for a new project : end #####
+
+PLATFORMOUTDIR			:=$(BUILDDIR)$(GLOBALOUTDIR)/$(PLATFORM)
+PROJOUTDIR				:=$(PLATFORMOUTDIR)/$(CONFIG)/$(PRJNAME)
+OSPROJOUTDIR			:=$(OSBUILDDIR)$(GLOBALOUTDIR)$(sep)$(PLATFORM)$(sep)$(CONFIG)$(sep)$(PRJNAME)
+OUTDIR					:=$(PLATFORMOUTDIR)/$(CONFIG)
+SRCDIR					:=./Source/Manual/Cpp
+INCPLATFORMDIR			:=./
+INCROOTDIR				:=./
+OUTPUTFILENAME			:=$(PRJNAME).elf
+OUTPUTFILE				:=$(OUTDIR)/$(OUTPUTFILENAME)
+PROJECTFLAGS			:=-DUNICODE -Dlinux
+LIBDIR					:=-L$(OUTDIR) \
+						-L"$(SDK_PATH)/RFID_C_API/lib" \
+						-L"$(SDK_PATH)/rootfs/usr/lib" \
+
+#LIBS					:=-lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lgnutls -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+LIBS					:=-lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lgnutls -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+
+CXXFLAGS				:=$(GLOBALCXXFLAGS)
+
+INCDIR					:=-I$(SDK_PATH)/RFID_C_API/include \
+						-I./Source/Manual/header \
+						
+				
+OBJS					+= \
+						$(PROJOUTDIR)/accessInModes.o \
+						$(PROJOUTDIR)/AntennaRFConfig.o \
+						$(PROJOUTDIR)/AppInstall.o \
+						$(PROJOUTDIR)/AppInstallMBCS.o \
+						$(PROJOUTDIR)/CableLoss.o \
+						$(PROJOUTDIR)/Config.o \
+						$(PROJOUTDIR)/G2V2.o \
+						$(PROJOUTDIR)/ImpinjQT.o \
+						$(PROJOUTDIR)/Inventory.o \
+						$(PROJOUTDIR)/llrpInClientMode.o \
+						$(PROJOUTDIR)/ManualTests.o \
+						$(PROJOUTDIR)/nxpG2IL.o \
+						$(PROJOUTDIR)/PowerNegotiation.o \
+						$(PROJOUTDIR)/RdrCaps.o \
+						$(PROJOUTDIR)/RegionSupport.o \
+						$(PROJOUTDIR)/rfid4FreeFilters.o \
+						$(PROJOUTDIR)/rfidStatusInfo.o \
+						$(PROJOUTDIR)/rfModes.o \
+						$(PROJOUTDIR)/Rssi.o \
+						$(PROJOUTDIR)/SecureMode.o \
+						$(PROJOUTDIR)/Stress.o \
+						$(PROJOUTDIR)/SwitchModesSecure.o \
+						$(PROJOUTDIR)/TagAccess.o \
+						$(PROJOUTDIR)/TagFocus.o \
+						$(PROJOUTDIR)/TestNewAdditions.o \
+						$(PROJOUTDIR)/UpdateFW.o \
+						$(PROJOUTDIR)/utils.o
+							
+$(PROJOUTDIR)/accessInModes.o :  $(SRCDIR)/accessInModes.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/accessInModes.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/accessInModes.o
+$(PROJOUTDIR)/AntennaRFConfig.o :  $(SRCDIR)/AntennaRFConfig.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/AntennaRFConfig.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/AntennaRFConfig.o
+$(PROJOUTDIR)/AppInstall.o :  $(SRCDIR)/AppInstall.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/AppInstall.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/AppInstall.o
+$(PROJOUTDIR)/AppInstallMBCS.o :  $(SRCDIR)/AppInstallMBCS.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/AppInstallMBCS.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/AppInstallMBCS.o
+$(PROJOUTDIR)/CableLoss.o :  $(SRCDIR)/CableLoss.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/CableLoss.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/CableLoss.o
+$(PROJOUTDIR)/Config.o :  $(SRCDIR)/Config.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Config.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Config.o
+$(PROJOUTDIR)/ImpinjQT.o :  $(SRCDIR)/ImpinjQT.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ImpinjQT.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ImpinjQT.o
+$(PROJOUTDIR)/llrpInClientMode.o :  $(SRCDIR)/llrpInClientMode.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/llrpInClientMode.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/llrpInClientMode.o
+$(PROJOUTDIR)/ManualTests.o :  $(SRCDIR)/ManualTests.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ManualTests.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ManualTests.o
+$(PROJOUTDIR)/G2V2.o :  $(SRCDIR)/G2V2.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/G2V2.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/G2V2.o
+$(PROJOUTDIR)/Inventory.o :  $(SRCDIR)/Inventory.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Inventory.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Inventory.o
+$(PROJOUTDIR)/nxpG2IL.o :  $(SRCDIR)/nxpG2IL.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/nxpG2IL.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/nxpG2IL.o
+$(PROJOUTDIR)/PowerNegotiation.o :  $(SRCDIR)/PowerNegotiation.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/PowerNegotiation.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/PowerNegotiation.o
+$(PROJOUTDIR)/RdrCaps.o :  $(SRCDIR)/RdrCaps.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/RdrCaps.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/RdrCaps.o
+$(PROJOUTDIR)/RegionSupport.o :  $(SRCDIR)/RegionSupport.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/RegionSupport.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/RegionSupport.o
+$(PROJOUTDIR)/rfid4FreeFilters.o :  $(SRCDIR)/rfid4FreeFilters.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/rfid4FreeFilters.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/rfid4FreeFilters.o
+$(PROJOUTDIR)/rfidStatusInfo.o :  $(SRCDIR)/rfidStatusInfo.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/rfidStatusInfo.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/rfidStatusInfo.o
+$(PROJOUTDIR)/rfModes.o :  $(SRCDIR)/rfModes.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/rfModes.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/rfModes.o
+$(PROJOUTDIR)/Rssi.o :  $(SRCDIR)/Rssi.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Rssi.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Rssi.o
+$(PROJOUTDIR)/SecureMode.o :  $(SRCDIR)/SecureMode.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/SecureMode.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/SecureMode.o
+$(PROJOUTDIR)/Stress.o :  $(SRCDIR)/Stress.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Stress.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Stress.o
+$(PROJOUTDIR)/SwitchModesSecure.o :  $(SRCDIR)/SwitchModesSecure.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/SwitchModesSecure.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/SwitchModesSecure.o
+$(PROJOUTDIR)/TagAccess.o :  $(SRCDIR)/TagAccess.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TagAccess.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TagAccess.o
+$(PROJOUTDIR)/TagFocus.o :  $(SRCDIR)/TagFocus.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TagFocus.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TagFocus.o
+$(PROJOUTDIR)/TestNewAdditions.o :  $(SRCDIR)/TestNewAdditions.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestNewAdditions.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestNewAdditions.o
+$(PROJOUTDIR)/UpdateFW.o :  $(SRCDIR)/UpdateFW.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/UpdateFW.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/UpdateFW.o
+$(PROJOUTDIR)/utils.o :  $(SRCDIR)/utils.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/utils.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/utils.o
+	
+##
+## Build Targets
+##
+
+.PHONY : prebuild 
+prebuild:
+ifneq ($(CONFIG),clean)
+ifeq (,$(wildcard $(OSPROJOUTDIR)))
+	@$(MKDIR) $(OSPROJOUTDIR)
+endif
+endif
+
+$(OUTPUTFILE): $(OBJS)
+	@echo "linking.."
+	$(CXX) $(LIBDIR) $(TARGET) -o $(OUTPUTFILE) $(OBJS) $(LIBS) $(RPATHOPTIONS)	
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PHONY : linux64_clean 
+linux64_clean:
+linux64_clean: prebuild
+	$(RMDIR) $(PLATFORMOUTDIR)$(sep)linux64_release$(sep)$(PRJNAME)
+	$(RMDIR) $(PLATFORMOUTDIR)$(sep)linux64_debug$(sep)$(PRJNAME)
+	$(RM) $(PLATFORMOUTDIR)$(sep)linux64_release$(sep)$(OUTPUTFILENAME)
+	$(RM) $(PLATFORMOUTDIR)$(sep)linux64_debug$(sep)$(OUTPUTFILENAME)
+
+
+.PHONY : linux64_debug
+linux64_debug: prebuild
+linux64_debug: $(OUTPUTFILE)
+
+
+.PHONY : linux64_release
+linux64_release: prebuild
+linux64_release: $(OUTPUTFILE)
+
+
+
+.PHONY : linux64_all
+hercules_all: prebuild
+hercules_all: $(OUTPUTFILE)

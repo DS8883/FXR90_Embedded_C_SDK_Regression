@@ -1,0 +1,6052 @@
+{
+  "RegionList": [
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Ghana",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Falkland Islands(Malvinas)",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "French Guiana",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Germany",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Guadeloupe",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Italy",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Macedonia",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Malta",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Martinique",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Montenegro",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Netherlands",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Poland",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Anguilla",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Belarus",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Albania",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Bosnia",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Georgia",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Monaco",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "6",
+      "Enabled": "true",
+      "Country": "Bahrain",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "ETSI_302_208",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "12",
+      "Enabled": "true",
+      "Country": "UAE",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "UAE",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "13",
+      "Enabled": "true",
+      "Country": "Saudi Arabia",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "SAUDI_ARABIA",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "15",
+      "Enabled": "true",
+      "Country": "Hong Kong",
+      "RegionName": "Hong_Kong1",
+      "StandardName": "HONG_KONG_1",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "24",
+      "Enabled": "true",
+      "Country": "New Zealand",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "NEW_ZEALAND",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "25",
+      "Enabled": "true",
+      "Country": "Turkey",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "TURKEY",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "29",
+      "Enabled": "false",
+      "Country": "South Africa",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "SOUTH_AFRICA",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "38",
+      "Enabled": "false",
+      "Country": "Vietnam",
+      "RegionName": "Vietnam_ETSI",
+      "StandardName": "VIETNAM_ETSI",
+      "NoOfChannels": "3",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 866300,
+          "Power": 232
+        },
+        {
+          "Index": 1,
+          "Frequency": 866900,
+          "Power": 232
+        },
+        {
+          "Index": 2,
+          "Frequency": 867500,
+          "Power": 232
+        }
+      ]
+    },
+    {
+      "Index": "39",
+      "Enabled": "true",
+      "Country": "Cambodia",
+      "RegionName": "Cambodia",
+      "StandardName": "CAMBODIA",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 262
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 262
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 262
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 262
+        }
+      ]
+    },
+    {
+      "Index": "41",
+      "Enabled": "false",
+      "Country": "Laos",
+      "RegionName": "Laos_ETSI",
+      "StandardName": "LAOS_ETSI",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 232
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 232
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 232
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 232
+        }
+      ]
+    },
+    {
+      "Index": "45",
+      "Enabled": "true",
+      "Country": "Liechtenstein,Switzerland",
+      "RegionName": "ETSI_EU_800M_900M_2_Channels",
+      "StandardName": "ETSI_EU_800M_900M_2_CHANNEL",
+      "NoOfChannels": "6",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Austria",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Belgium",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Bulgaria",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Croatia",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Cyprus",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Czech Republic",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Denmark",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Estonia",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Finland",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "France",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Hungary",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Iceland",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Ireland",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Latvia",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Lithuania",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Luxembourg",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Portugal",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Romania",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Slovakia",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Slovenia",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Spain",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "Sweden",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "46",
+      "Enabled": "true",
+      "Country": "United Kingdom",
+      "RegionName": "ETSI_EU_800M_900M_3_Channels",
+      "StandardName": "ETSI_EU_800M_900M_3_CHANNEL",
+      "NoOfChannels": "7",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "47",
+      "Enabled": "false",
+      "Country": "Russia",
+      "RegionName": "ETSI_RUSSIA_800M_900M_3_CHANNEL",
+      "StandardName": "ETSI_RUSSIA_800M_900M_3_CHANNEL",
+      "NoOfChannels": "6",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 918700,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "51",
+      "Enabled": "true",
+      "Country": "Morocco",
+      "RegionName": "Morocco",
+      "StandardName": "MOROCCO",
+      "NoOfChannels": "2",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 867800,
+          "Power": 232
+        }
+      ]
+    },
+    {
+      "Index": "52",
+      "Enabled": "false",
+      "Country": "Ukraine",
+      "RegionName": "Ukraine",
+      "StandardName": "UKRAINE",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 270
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 270
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 270
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 270
+        }
+      ]
+    },
+    {
+      "Index": "53",
+      "Enabled": "true",
+      "Country": "Norway",
+      "RegionName": "ETSI_EU_800M_900M_4_Channels",
+      "StandardName": "ETSI_NORWAY_800M_900M_4_CHANNEL",
+      "NoOfChannels": "8",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        },
+        {
+          "Index": 7,
+          "Frequency": 919900,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "55",
+      "Enabled": "false",
+      "Country": "Ghana",
+      "RegionName": "Ghana_ETSI",
+      "StandardName": "GHANA_ETSI",
+      "NoOfChannels": "3",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 866300,
+          "Power": 232
+        },
+        {
+          "Index": 1,
+          "Frequency": 866900,
+          "Power": 232
+        },
+        {
+          "Index": 2,
+          "Frequency": 867500,
+          "Power": 232
+        }
+      ]
+    },
+    {
+      "Index": "57",
+      "Enabled": "false",
+      "Country": "Jordan",
+      "RegionName": "NewETSI_Generic",
+      "StandardName": "JORDAN",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "59",
+      "Enabled": "true",
+      "Country": "South Africa",
+      "RegionName": "SANS_EN_302_208",
+      "StandardName": "SOUTH_AFRICA_1",
+      "NoOfChannels": "8",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 916300,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 917500,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 918700,
+          "Power": 292
+        },
+        {
+          "Index": 7,
+          "Frequency": 919900,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "60",
+      "Enabled": "true",
+      "Country": "South Africa",
+      "RegionName": "FCC15_FHSS",
+      "StandardName": "SOUTH_AFRICA_2",
+      "NoOfChannels": "5",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "ETSI",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 918250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "61",
+      "Enabled": "true",
+      "Country": "Kazakhstan",
+      "RegionName": "Kazakhstan_ETSI",
+      "StandardName": "Kazakhstan_ETSI",
+      "NoOfChannels": "4",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "100",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "true",
+      "ChannelSelectable": "true",
+      "Mode": "ETSI",
+      "SKU": "WR,E8",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 865700,
+          "Power": 230
+        },
+        {
+          "Index": 1,
+          "Frequency": 866300,
+          "Power": 230
+        },
+        {
+          "Index": 2,
+          "Frequency": 866900,
+          "Power": 230
+        },
+        {
+          "Index": 3,
+          "Frequency": 867500,
+          "Power": 230
+        }
+      ]
+    },
+    {
+      "Index": "7",
+      "Enabled": "true",
+      "Country": "South Korea",
+      "RegionName": "Korea_FHSS",
+      "StandardName": "KOREA_KCC_2008_137",
+      "NoOfChannels": "6",
+      "ChannelWidth": "600.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 917300,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 917900,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 918500,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 919100,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 919700,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 920300,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "8",
+      "Enabled": "true",
+      "Country": "China",
+      "RegionName": "China",
+      "StandardName": "CHINA_FHSS",
+      "NoOfChannels": "16",
+      "ChannelWidth": "250.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923375,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 923125,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 921375,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 922875,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 921875,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 922375,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 924125,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 922625,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 921625,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 922125,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 923875,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 920875,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 924375,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 921125,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 923625,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 920625,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "10",
+      "Enabled": "true",
+      "Country": "Mexico",
+      "RegionName": "FCC_Generic",
+      "StandardName": "MEXICO",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "11",
+      "Enabled": "true",
+      "Country": "Argentina",
+      "RegionName": "FCC_Generic",
+      "StandardName": "ARGENTINA",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "16",
+      "Enabled": "true",
+      "Country": "Hong Kong",
+      "RegionName": "Hong_Kong2",
+      "StandardName": "HONG_KONG_2",
+      "NoOfChannels": "8",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 923250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 921750,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "17",
+      "Enabled": "true",
+      "Country": "Brazil",
+      "RegionName": "Brazil",
+      "StandardName": "BRAZIL",
+      "NoOfChannels": "50",
+      "ChannelWidth": "333.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 919200,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 922500,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 926400,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 906200,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 923100,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 905600,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 924000,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 927000,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 922200,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 905000,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 917100,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 903200,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 915900,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 920700,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 926100,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 917400,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 905300,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 921000,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 905900,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 923400,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 918600,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 925200,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 921900,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 916200,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 903500,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 916500,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 920400,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 925500,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 921300,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 924600,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 920100,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916800,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 903800,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 918300,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 923700,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 926700,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 922800,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 917700,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 904100,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 919500,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 924900,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 919800,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 902900,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 921600,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 918000,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 925800,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 904400,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 918900,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 924300,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 904700,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "18",
+      "Enabled": "true",
+      "Country": "Australia",
+      "RegionName": "Australia",
+      "StandardName": "AUSTRALIA",
+      "NoOfChannels": "10",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 923250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 924750,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "18",
+      "Enabled": "true",
+      "Country": "Christmas Island",
+      "RegionName": "Australia",
+      "StandardName": "AUSTRALIA",
+      "NoOfChannels": "10",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 923250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 924750,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "19",
+      "Enabled": "true",
+      "Country": "Canada",
+      "RegionName": "FCC_Generic",
+      "StandardName": "CANADA_FCC_15",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "19",
+      "Enabled": "true",
+      "Country": "El Salvador",
+      "RegionName": "FCC_Generic",
+      "StandardName": "CANADA_FCC_15",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "19",
+      "Enabled": "true",
+      "Country": "Bolivia",
+      "RegionName": "FCC_Generic",
+      "StandardName": "CANADA_FCC_15",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "19",
+      "Enabled": "true",
+      "Country": "Honduras",
+      "RegionName": "FCC_Generic",
+      "StandardName": "CANADA_FCC_15",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 300
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 300
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 300
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 300
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 300
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 300
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 300
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 300
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 300
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 300
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 300
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 300
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 300
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "20",
+      "Enabled": "true",
+      "Country": "Malaysia",
+      "RegionName": "Malaysia",
+      "StandardName": "MALAYSIA",
+      "NoOfChannels": "6",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 921750,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 919750,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 920250,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 920750,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 922250,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "21",
+      "Enabled": "true",
+      "Country": "Singapore",
+      "RegionName": "Singapore",
+      "StandardName": "SINGAPORE",
+      "NoOfChannels": "8",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923750,
+          "Power": 292
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 292
+        },
+        {
+          "Index": 2,
+          "Frequency": 920750,
+          "Power": 292
+        },
+        {
+          "Index": 3,
+          "Frequency": 922250,
+          "Power": 292
+        },
+        {
+          "Index": 4,
+          "Frequency": 923250,
+          "Power": 292
+        },
+        {
+          "Index": 5,
+          "Frequency": 924250,
+          "Power": 292
+        },
+        {
+          "Index": 6,
+          "Frequency": 922750,
+          "Power": 292
+        },
+        {
+          "Index": 7,
+          "Frequency": 921750,
+          "Power": 292
+        }
+      ]
+    },
+    {
+      "Index": "22",
+      "Enabled": "true",
+      "Country": "Taiwan",
+      "RegionName": "Taiwan",
+      "StandardName": "TAIWAN",
+      "NoOfChannels": "14",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 923250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 927250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "26",
+      "Enabled": "true",
+      "Country": "Peru",
+      "RegionName": "Peru",
+      "StandardName": "PERU_FCC_15",
+      "NoOfChannels": "22",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "27",
+      "Enabled": "true",
+      "Country": "Colombia",
+      "RegionName": "Colombia",
+      "StandardName": "COLOMBIA_FCC_15",
+      "NoOfChannels": "25",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 920250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 919250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 918750,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 917750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 12,
+          "Frequency": 917250,
+          "Power": 300
+        },
+        {
+          "Index": 13,
+          "Frequency": 918250,
+          "Power": 300
+        },
+        {
+          "Index": 14,
+          "Frequency": 916250,
+          "Power": 300
+        },
+        {
+          "Index": 15,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 16,
+          "Frequency": 919750,
+          "Power": 300
+        },
+        {
+          "Index": 17,
+          "Frequency": 916750,
+          "Power": 300
+        },
+        {
+          "Index": 18,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 19,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 20,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 21,
+          "Frequency": 921250,
+          "Power": 300
+        },
+        {
+          "Index": 22,
+          "Frequency": 920750,
+          "Power": 300
+        },
+        {
+          "Index": 23,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 24,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "28",
+      "Enabled": "true",
+      "Country": "Chile",
+      "RegionName": "Chile",
+      "StandardName": "CHILE_FCC_15",
+      "NoOfChannels": "4",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 925750,
+          "Power": 240
+        },
+        {
+          "Index": 1,
+          "Frequency": 926250,
+          "Power": 240
+        },
+        {
+          "Index": 2,
+          "Frequency": 926750,
+          "Power": 240
+        },
+        {
+          "Index": 3,
+          "Frequency": 927250,
+          "Power": 240
+        }
+      ]
+    },
+    {
+      "Index": "31",
+      "Enabled": "true",
+      "Country": "Venezuela",
+      "RegionName": "Taiwan",
+      "StandardName": "VENEZUELA",
+      "NoOfChannels": "12",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 927750,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 923250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 922750,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "32",
+      "Enabled": "true",
+      "Country": "Indonesia",
+      "RegionName": "Indonesia",
+      "StandardName": "INDONESIA",
+      "NoOfChannels": "6",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 920250,
+          "Power": 200
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 200
+        },
+        {
+          "Index": 2,
+          "Frequency": 922250,
+          "Power": 200
+        },
+        {
+          "Index": 3,
+          "Frequency": 920750,
+          "Power": 200
+        },
+        {
+          "Index": 4,
+          "Frequency": 921750,
+          "Power": 200
+        },
+        {
+          "Index": 5,
+          "Frequency": 922750,
+          "Power": 200
+        }
+      ]
+    },
+    {
+      "Index": "33",
+      "Enabled": "true",
+      "Country": "Philippines",
+      "RegionName": "Philippines",
+      "StandardName": "PHILIPPINES",
+      "NoOfChannels": "3",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 918500,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 919000,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 919500,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "34",
+      "Enabled": "true",
+      "Country": "New Zealand",
+      "RegionName": "Newzealand2",
+      "StandardName": "NEW_ZEALAND_2",
+      "NoOfChannels": "12",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 926750,
+          "Power": 300
+        },
+        {
+          "Index": 1,
+          "Frequency": 926250,
+          "Power": 300
+        },
+        {
+          "Index": 2,
+          "Frequency": 927250,
+          "Power": 300
+        },
+        {
+          "Index": 3,
+          "Frequency": 925250,
+          "Power": 300
+        },
+        {
+          "Index": 4,
+          "Frequency": 921750,
+          "Power": 300
+        },
+        {
+          "Index": 5,
+          "Frequency": 922250,
+          "Power": 300
+        },
+        {
+          "Index": 6,
+          "Frequency": 924750,
+          "Power": 300
+        },
+        {
+          "Index": 7,
+          "Frequency": 923750,
+          "Power": 300
+        },
+        {
+          "Index": 8,
+          "Frequency": 925750,
+          "Power": 300
+        },
+        {
+          "Index": 9,
+          "Frequency": 924250,
+          "Power": 300
+        },
+        {
+          "Index": 10,
+          "Frequency": 922750,
+          "Power": 300
+        },
+        {
+          "Index": 11,
+          "Frequency": 923250,
+          "Power": 300
+        }
+      ]
+    },
+    {
+      "Index": "35",
+      "Enabled": "true",
+      "Country": "Vietnam",
+      "RegionName": "Vietnam",
+      "StandardName": "VIETNAM",
+      "NoOfChannels": "8",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 921750,
+          "Power": 232
+        },
+        {
+          "Index": 1,
+          "Frequency": 919250,
+          "Power": 232
+        },
+        {
+          "Index": 2,
+          "Frequency": 918750,
+          "Power": 232
+        },
+        {
+          "Index": 3,
+          "Frequency": 920250,
+          "Power": 232
+        },
+        {
+          "Index": 4,
+          "Frequency": 921250,
+          "Power": 232
+        },
+        {
+          "Index": 5,
+          "Frequency": 922250,
+          "Power": 232
+        },
+        {
+          "Index": 6,
+          "Frequency": 920750,
+          "Power": 232
+        },
+        {
+          "Index": 7,
+          "Frequency": 919750,
+          "Power": 232
+        }
+      ]
+    },
+    {
+      "Index": "54",
+      "Enabled": "true",
+      "Country": "Costa Rica",
+      "RegionName": "Costa_Rica",
+      "StandardName": "COSTA_RICA",
+      "NoOfChannels": "50",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 915750,
+          "Power": 240
+        },
+        {
+          "Index": 1,
+          "Frequency": 915250,
+          "Power": 240
+        },
+        {
+          "Index": 2,
+          "Frequency": 903250,
+          "Power": 240
+        },
+        {
+          "Index": 3,
+          "Frequency": 926750,
+          "Power": 240
+        },
+        {
+          "Index": 4,
+          "Frequency": 926250,
+          "Power": 240
+        },
+        {
+          "Index": 5,
+          "Frequency": 904250,
+          "Power": 240
+        },
+        {
+          "Index": 6,
+          "Frequency": 927250,
+          "Power": 240
+        },
+        {
+          "Index": 7,
+          "Frequency": 920250,
+          "Power": 240
+        },
+        {
+          "Index": 8,
+          "Frequency": 919250,
+          "Power": 240
+        },
+        {
+          "Index": 9,
+          "Frequency": 909250,
+          "Power": 240
+        },
+        {
+          "Index": 10,
+          "Frequency": 918750,
+          "Power": 240
+        },
+        {
+          "Index": 11,
+          "Frequency": 917750,
+          "Power": 240
+        },
+        {
+          "Index": 12,
+          "Frequency": 905250,
+          "Power": 240
+        },
+        {
+          "Index": 13,
+          "Frequency": 904750,
+          "Power": 240
+        },
+        {
+          "Index": 14,
+          "Frequency": 925250,
+          "Power": 240
+        },
+        {
+          "Index": 15,
+          "Frequency": 921750,
+          "Power": 240
+        },
+        {
+          "Index": 16,
+          "Frequency": 914750,
+          "Power": 240
+        },
+        {
+          "Index": 17,
+          "Frequency": 906750,
+          "Power": 240
+        },
+        {
+          "Index": 18,
+          "Frequency": 913750,
+          "Power": 240
+        },
+        {
+          "Index": 19,
+          "Frequency": 922250,
+          "Power": 240
+        },
+        {
+          "Index": 20,
+          "Frequency": 911250,
+          "Power": 240
+        },
+        {
+          "Index": 21,
+          "Frequency": 911750,
+          "Power": 240
+        },
+        {
+          "Index": 22,
+          "Frequency": 903750,
+          "Power": 240
+        },
+        {
+          "Index": 23,
+          "Frequency": 908750,
+          "Power": 240
+        },
+        {
+          "Index": 24,
+          "Frequency": 905750,
+          "Power": 240
+        },
+        {
+          "Index": 25,
+          "Frequency": 912250,
+          "Power": 240
+        },
+        {
+          "Index": 26,
+          "Frequency": 906250,
+          "Power": 240
+        },
+        {
+          "Index": 27,
+          "Frequency": 917250,
+          "Power": 240
+        },
+        {
+          "Index": 28,
+          "Frequency": 914250,
+          "Power": 240
+        },
+        {
+          "Index": 29,
+          "Frequency": 907250,
+          "Power": 240
+        },
+        {
+          "Index": 30,
+          "Frequency": 918250,
+          "Power": 240
+        },
+        {
+          "Index": 31,
+          "Frequency": 916250,
+          "Power": 240
+        },
+        {
+          "Index": 32,
+          "Frequency": 910250,
+          "Power": 240
+        },
+        {
+          "Index": 33,
+          "Frequency": 910750,
+          "Power": 240
+        },
+        {
+          "Index": 34,
+          "Frequency": 907750,
+          "Power": 240
+        },
+        {
+          "Index": 35,
+          "Frequency": 924750,
+          "Power": 240
+        },
+        {
+          "Index": 36,
+          "Frequency": 909750,
+          "Power": 240
+        },
+        {
+          "Index": 37,
+          "Frequency": 919750,
+          "Power": 240
+        },
+        {
+          "Index": 38,
+          "Frequency": 916750,
+          "Power": 240
+        },
+        {
+          "Index": 39,
+          "Frequency": 913250,
+          "Power": 240
+        },
+        {
+          "Index": 40,
+          "Frequency": 923750,
+          "Power": 240
+        },
+        {
+          "Index": 41,
+          "Frequency": 908250,
+          "Power": 240
+        },
+        {
+          "Index": 42,
+          "Frequency": 925750,
+          "Power": 240
+        },
+        {
+          "Index": 43,
+          "Frequency": 912750,
+          "Power": 240
+        },
+        {
+          "Index": 44,
+          "Frequency": 924250,
+          "Power": 240
+        },
+        {
+          "Index": 45,
+          "Frequency": 921250,
+          "Power": 240
+        },
+        {
+          "Index": 46,
+          "Frequency": 920750,
+          "Power": 240
+        },
+        {
+          "Index": 47,
+          "Frequency": 922750,
+          "Power": 240
+        },
+        {
+          "Index": 48,
+          "Frequency": 902750,
+          "Power": 240
+        },
+        {
+          "Index": 49,
+          "Frequency": 923250,
+          "Power": 240
+        }
+      ]
+    },
+    {
+      "Index": "56",
+      "Enabled": "true",
+      "Country": "Ghana",
+      "RegionName": "Ghana_FCC",
+      "StandardName": "GHANA_FCC",
+      "NoOfChannels": "8",
+      "ChannelWidth": "500.000",
+      "RegOnOffTimeMax": "400",
+      "RegOnOffTimeMin": "0",
+      "LBTConfigurable": "false",
+      "HoppingConfigurable": "false",
+      "ChannelSelectable": "false",
+      "Mode": "FCC",
+      "SKU": "WR",
+      "ChannelListWithPower": [
+        {
+          "Index": 0,
+          "Frequency": 923750,
+          "Power": 232
+        },
+        {
+          "Index": 1,
+          "Frequency": 921250,
+          "Power": 232
+        },
+        {
+          "Index": 2,
+          "Frequency": 920750,
+          "Power": 232
+        },
+        {
+          "Index": 3,
+          "Frequency": 922250,
+          "Power": 232
+        },
+        {
+          "Index": 4,
+          "Frequency": 923250,
+          "Power": 232
+        },
+        {
+          "Index": 5,
+          "Frequency": 924250,
+          "Power": 232
+        },
+        {
+          "Index": 6,
+          "Frequency": 922750,
+          "Power": 232
+        },
+        {
+          "Index": 7,
+          "Frequency": 921750,
+          "Power": 232
+        }
+      ]
+    }
+  ]
+}

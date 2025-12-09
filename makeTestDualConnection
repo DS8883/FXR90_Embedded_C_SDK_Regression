@@ -1,0 +1,28 @@
+# Makefile for TestDualConnection
+
+SDK_PATH = ../Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0
+CROSS_COMPILE = $(SDK_PATH)/tools/wrappers/aarch64-poky-linux-
+CC = $(CROSS_COMPILE)g++
+SYSROOT = --sysroot=$(SDK_PATH)/rootfs
+
+INCLUDES = -I$(SDK_PATH)/RFID_C_API/include
+LIBS = -L$(SDK_PATH)/RFID_C_API/lib -L$(SDK_PATH)/rootfs/usr/lib
+LDFLAGS = -Wl,-rpath,/platform/lib:/usr/lib:/apps/bin/libs
+LINK_LIBS = -lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+
+all: BuildResults/TestDualConnection.elf
+
+BuildResults/TestDualConnection.o: Source/Manual/TestDualConnection.cpp
+	@mkdir -p BuildResults
+	$(CC) $(SYSROOT) $(INCLUDES) -c Source/Manual/TestDualConnection.cpp -o BuildResults/TestDualConnection.o
+
+BuildResults/TestDualConnection.elf: BuildResults/TestDualConnection.o
+	@echo "Linking TestDualConnection..."
+	$(CC) $(SYSROOT) $(LIBS) $(LDFLAGS) -o BuildResults/TestDualConnection.elf BuildResults/TestDualConnection.o $(LINK_LIBS)
+	@echo "Build complete: BuildResults/TestDualConnection.elf"
+
+clean:
+	rm -f BuildResults/TestDualConnection.o BuildResults/TestDualConnection.elf
+	@echo "Clean complete"
+
+.PHONY: all clean

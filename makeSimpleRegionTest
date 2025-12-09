@@ -1,0 +1,49 @@
+# Makefile for Simple Region Test
+# Standalone test to set region and run inventory
+
+SDK_PATH = /home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0
+
+# Compiler and paths
+CXX = $(SDK_PATH)/tools/wrappers/aarch64-poky-linux-g++
+SYSROOT = $(SDK_PATH)/rootfs
+
+# Include paths
+INCLUDES = -I$(SDK_PATH)/RFID_C_API/include \
+           -I$(SDK_PATH)/rootfs/usr/include
+
+# Library paths
+LIB_PATHS = -L$(SDK_PATH)/RFID_C_API/lib \
+            -L$(SDK_PATH)/rootfs/usr/lib
+
+# Libraries
+LIBS = -lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+
+# Compiler flags
+CXXFLAGS = --sysroot=$(SYSROOT) $(INCLUDES) -g -O0
+
+# Linker flags
+LDFLAGS = --sysroot=$(SYSROOT) $(LIB_PATHS) -Wl,-rpath,/platform/lib:/usr/lib:/apps/bin/libs
+
+# Source and output
+SRC = Source/Manual/SimpleRegionTest.cpp
+OBJ = BuildResults/SimpleRegionTest.o
+EXE = BuildResults/SimpleRegionTest.elf
+
+# Build target
+all: $(EXE)
+
+$(EXE): $(OBJ)
+	@echo "Linking SimpleRegionTest..."
+	$(CXX) $(LDFLAGS) -o $(EXE) $(OBJ) $(LIBS)
+	@echo "Build complete: $(EXE)"
+
+$(OBJ): $(SRC)
+	@mkdir -p BuildResults
+	@echo "Compiling SimpleRegionTest.cpp..."
+	$(CXX) $(CXXFLAGS) -c $(SRC) -o $(OBJ)
+
+clean:
+	rm -f $(OBJ) $(EXE)
+	@echo "Clean complete"
+
+.PHONY: all clean

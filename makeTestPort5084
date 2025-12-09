@@ -1,0 +1,23 @@
+# Makefile for TestPort5084
+
+SDK_PATH = ../Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0
+CROSS_COMPILE = $(SDK_PATH)/tools/wrappers/aarch64-poky-linux-
+CC = $(CROSS_COMPILE)g++
+SYSROOT = --sysroot=$(SDK_PATH)/rootfs
+
+all: BuildResults/TestPort5084.elf
+
+BuildResults/TestPort5084.o: Source/Manual/TestPort5084.cpp
+	@mkdir -p BuildResults
+	$(CC) $(SYSROOT) -c Source/Manual/TestPort5084.cpp -o BuildResults/TestPort5084.o
+
+BuildResults/TestPort5084.elf: BuildResults/TestPort5084.o
+	@echo "Linking TestPort5084..."
+	$(CC) $(SYSROOT) -o BuildResults/TestPort5084.elf BuildResults/TestPort5084.o
+	@echo "Build complete: BuildResults/TestPort5084.elf"
+
+clean:
+	rm -f BuildResults/TestPort5084.o BuildResults/TestPort5084.elf
+	@echo "Clean complete"
+
+.PHONY: all clean

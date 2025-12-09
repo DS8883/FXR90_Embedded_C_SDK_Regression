@@ -1,0 +1,216 @@
+#include <windows.h>
+#include "Common.h"
+#include "APITest.h"
+
+extern struct RFID3DATA api3Data;
+
+struct MYLOGIN
+{
+	LOGIN_INFO loginfo;
+	FTPSERVER_INFO ftpinfo;
+	READER_TYPE readerType;
+	BOOL bMode;
+};
+
+DWORD WINAPI Connect2Read( LPVOID lParam)
+{
+	RFID_HANDLE32 hReader;
+	TRIGGER_INFO triggerInfo;
+	READ_ACCESS_PARAMS rParams;
+	TCHAR szIp[256];
+	lstrcpy(szIp,(TCHAR*)lParam);
+	api3Data.rfidStatus = RFID_Connect( &hReader, szIp,5084,0,0 );
+	
+	ERROR_INFO eInfo;
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	fprintf(api3Data.fpLog,"\nConnect Call on Reader %S StatusCode %d\n",szIp,api3Data.rfidStatus );
+
+	triggerInfo.tagReportTrigger	= 0; // Report back all read tags after 3 rounds of inventory).
+	triggerInfo.startTrigger.type	= START_TRIGGER_TYPE_IMMEDIATE;
+	triggerInfo.stopTrigger.type	= STOP_TRIGGER_TYPE_DURATION;
+	triggerInfo.stopTrigger.value.duration = 50000; 
+	if( api3Data.apiVersion ==  RFID_API3_5_1 )
+	{
+		triggerInfo.lpTagEventReportInfo = NULL;
+	}
+	// TEST with Simple Write Operations without AnyFilters 
+	
+	LPTAG_DATA pTagData = RFID_AllocateTag( hReader );	
+	
+	rParams.accessPassword  = 0;
+	rParams.memoryBank = MEMORY_BANK_EPC;
+	rParams.byteCount = 0;
+	rParams.byteOffset = 4;	// read entire mem bank
+	
+	PRE_FILTER pf;
+	UINT8 pattern[2] = {0x30,0x00};
+	UINT32 index;
+	pf.bitOffset =16;pf.filterAction = FILTER_ACTION_STATE_UNAWARE;
+	pf.filterActionParams.stateUnawareAction = STATE_UNAWARE_ACTION_SELECT_NOT_UNSELECT;
+	pf.memoryBank = MEMORY_BANK_EPC;pf.pTagPattern = pattern;pf.tagPatternBitCount = 16;
+	//Status = RFID_AddPreFilter( hReader, 0,0,&index );
+	api3Data.rfidStatus = RFID_PerformInventory(hReader,NULL,NULL,&triggerInfo,NULL );
+	Sleep( 51000 );
+
+	api3Data.rfidStatus = RFID_StopInventory( hReader );	
+	
+	while( RFID_API_SUCCESS == RFID_GetReadTag(hReader, pTagData))
+	{
+		api3Data.rfidStatus = RFID_Read( hReader,pTagData->pTagID,pTagData->tagIDLength,&rParams,NULL,NULL,pTagData,0);
+		printTagMemoryBankData(pTagData->antennaID,pTagData->PC,pTagData->CRC,pTagData->pTagID, pTagData->tagIDLength,
+		pTagData->pMemoryBankData, pTagData->memoryBankDataLength, MEMORY_BANK_EPC); 
+		//Print2Console(pTagData->CRC,pTagData->PC, pTagData->XPC,(TCHAR*)lParam,pTagData->pTagID,pTagData->tagIDLength );
+	}
+	api3Data.rfidStatus = RFID_DeallocateTag( hReader,pTagData );
+	api3Data.rfidStatus = RFID_Disconnect( hReader );
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\nDisConnect Call on Reader %S StatusCode %d\n",szIp,api3Data.rfidStatus );
+
+	return TRUE;
+}
+
+DWORD WINAPI ThreadRMAPI( LPVOID lParam)
+{
+	RFID_HANDLE32 hReader;
+		
+	MYLOGIN* pLoginInfo = ( MYLOGIN* ) lParam;
+	api3Data.rfidStatus = RFID_Login( &hReader,&(pLoginInfo->loginfo),pLoginInfo->readerType,pLoginInfo->bMode,0);
+	ERROR_INFO eInfo;
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\nLogin Call on Reader %S StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+	Sleep( 15000 );
+	BOOLEAN antennaStatus = TRUE;
+	UINT16 antennaID;
+	api3Data.rfidStatus = RFID_EnableReadPoint( hReader, 1, antennaStatus);
+	api3Data.rfidStatus = RFID_EnableReadPoint( hReader, 2, antennaStatus);
+	api3Data.rfidStatus = RFID_EnableReadPoint( hReader, 3, antennaStatus);
+	api3Data.rfidStatus = RFID_EnableReadPoint( hReader, 4, antennaStatus);
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_EnableReadPoint StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	api3Data.rfidStatus = RFID_GetReadPointStatus( hReader, 1, &antennaStatus);
+	api3Data.rfidStatus = RFID_GetReadPointStatus( hReader, 2, &antennaStatus);
+	api3Data.rfidStatus = RFID_GetReadPointStatus( hReader, 3, &antennaStatus);
+	api3Data.rfidStatus = RFID_GetReadPointStatus( hReader, 4, &antennaStatus);
+	
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetReadPointStatus StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	ANTENNA_MODE mode;
+	api3Data.rfidStatus = RFID_GetAntennaMode( hReader,&mode );
+	
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetAntennaMode StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	mode = ANTENNA_MODE_MONOSTATIC;
+	api3Data.rfidStatus = RFID_SetAntennaMode( hReader, mode);
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetAntennaMode StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	api3Data.rfidStatus = RFID_UpdateSoftware( hReader, &(pLoginInfo->ftpinfo) );
+	
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_UpdateSoftware StatusCode %d\n",pLoginInfo->ftpinfo.hostName,api3Data.rfidStatus );
+
+	UPDATE_STATUS upgradeStatus;
+	api3Data.rfidStatus = RFID_GetUpdateStatus( hReader, &upgradeStatus);
+	
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetUpdateStatus StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+	
+	READER_SYSTEM_INFO SysInfo;
+	api3Data.rfidStatus = RFID_GetSystemInfo( hReader, &SysInfo);
+	
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetSystemInfo StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	api3Data.rfidStatus = RFID_ExportProfileToReader( hReader,TEXT("Default1.xml"),TEXT("C:\\Temp"),TRUE);
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_ExportProfileToReader StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	PROFILE_LIST ProfileList ;
+	api3Data.rfidStatus = RFID_GetProfileList( hReader, &ProfileList);
+	api3Data.rfidStatus = RFID_ImportProfileFromReader( hReader,TEXT("Default.xml"),TEXT("C:\\Temp") );
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_ImportProfileFromReader StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	BOOLEAN pState;
+	api3Data.rfidStatus = RFID_GetRadioPowerState( hReader,&pState );
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_GetRadioPowerState StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus );
+
+	api3Data.rfidStatus = RFID_SetRadioPowerState( hReader,TRUE);
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_SetRadioPowerState StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus);
+
+	TCHAR pFileName;
+    api3Data.rfidStatus = RFID_UpdateRadioFirmware( hReader,&pFileName);
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Call on Reader %S RFID_UpdateRadioFirmware StatusCode %d\n",pLoginInfo->loginfo.hostName,api3Data.rfidStatus);
+
+	/*Status = RFID_Restart( hReader );
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n ReStart Call on Reader %S StatusCode %d\n",pLoginInfo->loginfo.hostName,eInfo.rfidStatusCode );*/
+
+	api3Data.rfidStatus = RFID_Logout( hReader );
+
+	RFID_GetLastErrorInfo( hReader,&eInfo );
+	printf("\n Logout Call on Reader %S RFID_UpdateSoftware StatusCode %d\n",pLoginInfo->ftpinfo.hostName,api3Data.rfidStatus );
+
+	return TRUE;
+}
+
+void TestThreadSafe( void )
+{
+	HANDLE h1,h2,h3,h4,h5,h6; DWORD dwThreadID;
+	h1 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("157.235.206.13"),0,&dwThreadID);
+	h2 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("157.235.206.130"),0,&dwThreadID);
+	//h3 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("157.235.206.29"),0,&dwThreadID);
+	//h4 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("157.235.206.29"),0,&dwThreadID);
+	//h5 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("157.235.208.20"),0,&dwThreadID);
+	//h6 = CreateThread(NULL,0,Connect2Read,(PVOID)TEXT("192.168.2.176"),0,&dwThreadID); 
+
+
+}
+
+void TestThreadSafeRMAPI( void )
+{
+	HANDLE h1,h2,h3,h4,h5,h6; DWORD dwThreadID;
+	
+	// Thread 1
+	printf("\n\n THREAD1 RMAPI\n");
+	{
+		LOGIN_INFO loginfo = { TEXT("157.235.206.13"),TEXT("admin"),TEXT("change"),RFID_API3_5_1,TRUE,0,0};
+		FTPSERVER_INFO ftpinfo = { TEXT("157.235.206.13"),TEXT("admin"),TEXT("change"),0};
+		MYLOGIN info = { loginfo,ftpinfo, FX, FALSE };
+		
+		h1 = CreateThread(NULL,0,ThreadRMAPI,(PVOID)(&info),0,&dwThreadID);
+	}
+	
+	// Thread 2
+	printf("\n\n THREAD2 RMAPI\n");
+	{
+		LOGIN_INFO loginfo = { TEXT("157.235.206.130"),TEXT("admin"),TEXT("change")};
+		MYLOGIN info = { loginfo, FX, FALSE };
+		h2 = CreateThread(NULL,0,ThreadRMAPI,(PVOID)(&info),0,&dwThreadID);
+	}
+	
+	// Thread 3
+	/*printf("\n\n THREAD2 RMAPI\n");
+	{
+		LOGIN_INFO loginfo = { TEXT("157.235.206.29"),TEXT("admin"),TEXT("admin")};
+		MYLOGIN info = { loginfo, XR, FALSE };
+		h3 = CreateThread(NULL,0,ThreadRMAPI,(PVOID)(&info),0,&dwThreadID);
+	}*/
+	
+}

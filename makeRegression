@@ -1,0 +1,211 @@
+##
+## Makefile for unittestapp executable for Thredbo
+##
+
+
+include ./common.mk
+
+
+ifneq ($(MAKECMDGOALS),linux64_clean)
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+endif
+
+
+
+### Edit this section for a new project : start #####
+PRJNAME					:=embdLnxRegression
+BUILDDIR				:=
+OSBUILDDIR				:=
+### Edit this section for a new project : end #####
+
+PLATFORMOUTDIR			:=$(BUILDDIR)$(GLOBALOUTDIR)/$(PLATFORM)
+PROJOUTDIR				:=$(PLATFORMOUTDIR)/$(CONFIG)/$(PRJNAME)
+OSPROJOUTDIR			:=$(OSBUILDDIR)$(GLOBALOUTDIR)$(sep)$(PLATFORM)$(sep)$(CONFIG)$(sep)$(PRJNAME)
+OUTDIR					:=$(PLATFORMOUTDIR)/$(CONFIG)
+SRCDIR					:=./Source/Regression/Cpp
+INCPLATFORMDIR			:=./
+INCROOTDIR				:=./
+OUTPUTFILENAME			:=$(PRJNAME).elf
+OUTPUTFILE				:=$(OUTDIR)/$(OUTPUTFILENAME)
+PROJECTFLAGS			:=-DUNICODE -Dlinux
+#LIBDIR					:=-L$(OUTDIR) \
+#						-L"./rfid3depends/lib" \
+
+#LIBS					:=-lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lgnutls -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+LIBS					:=-lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+
+CXXFLAGS				:=$(GLOBALCXXFLAGS)
+
+#INCDIR					:=-I./rfid3depends/include \
+#						-I./Source/Regression/Header \
+
+INCDIR					:=-I/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/RFID_C_API/include \
+						-I./Source/Regression/Header \
+
+LIBDIR					:=-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/rootfs/usr/lib \
+					-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/RFID_C_API/lib \
+					-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/rootfs/usr/include
+						
+				
+OBJS					+= \
+						$(PROJOUTDIR)/AbFlipSlAll.o \
+						$(PROJOUTDIR)/accessFilter.o \
+						$(PROJOUTDIR)/antennaConfig.o \
+						$(PROJOUTDIR)/APITest.o \
+						$(PROJOUTDIR)/Common.o \
+						$(PROJOUTDIR)/config.o \
+						$(PROJOUTDIR)/fujitsu64K.o \
+						$(PROJOUTDIR)/fujitsu8k.o \
+						$(PROJOUTDIR)/fx7500RMAPI.o \
+						$(PROJOUTDIR)/G2V2.o \
+						$(PROJOUTDIR)/ImpinjQT.o \
+						$(PROJOUTDIR)/Inventory.o \
+						$(PROJOUTDIR)/LicManager.o \
+						$(PROJOUTDIR)/Monza5.o \
+						$(PROJOUTDIR)/NxpC.o \
+						$(PROJOUTDIR)/PhaseInfo.o \
+						$(PROJOUTDIR)/RFID3EventsAutoMode.o \
+						$(PROJOUTDIR)/RFID3Stress.o \
+						$(PROJOUTDIR)/Sprint1.o \
+						$(PROJOUTDIR)/Sprint2.o \
+						$(PROJOUTDIR)/Sprint3.o \
+						$(PROJOUTDIR)/Support1.3.6.o \
+						$(PROJOUTDIR)/TagFieldSettings.o \
+						$(PROJOUTDIR)/TestErrorAPI.o \
+						$(PROJOUTDIR)/TestInventory.o \
+						$(PROJOUTDIR)/testLocateDuty.o \
+						$(PROJOUTDIR)/testnegative.o \
+						$(PROJOUTDIR)/TestOpSequence.o \
+						$(PROJOUTDIR)/TestRFID3Events.o \
+						$(PROJOUTDIR)/testRFID3Reads.o \
+						$(PROJOUTDIR)/testRFMode.o \
+						$(PROJOUTDIR)/TestRMAPI.o \
+						$(PROJOUTDIR)/TestSingulation.o \
+						$(PROJOUTDIR)/TestWrites.o \
+						$(PROJOUTDIR)/ThreadSafeSingleReader.o \
+						$(PROJOUTDIR)/ThreadSafetyTest.o \
+						$(PROJOUTDIR)/utils.o \
+						$(PROJOUTDIR)/ValidateParameters.o \
+						$(PROJOUTDIR)/VerifyRegionConfigAPI.o 
+	
+$(PROJOUTDIR)/AbFlipSlAll.o :  $(SRCDIR)/AbFlipSlAll.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/AbFlipSlAll.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/AbFlipSlAll.o
+$(PROJOUTDIR)/accessFilter.o :  $(SRCDIR)/accessFilter.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/accessFilter.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/accessFilter.o
+$(PROJOUTDIR)/antennaConfig.o :  $(SRCDIR)/antennaConfig.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/antennaConfig.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/antennaConfig.o
+$(PROJOUTDIR)/APITest.o :  $(SRCDIR)/APITest.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/APITest.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/APITest.o
+$(PROJOUTDIR)/Common.o :  $(SRCDIR)/Common.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Common.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Common.o
+$(PROJOUTDIR)/config.o :  $(SRCDIR)/config.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/config.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/config.o
+$(PROJOUTDIR)/fujitsu64K.o :  $(SRCDIR)/fujitsu64K.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/fujitsu64K.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/fujitsu64K.o
+$(PROJOUTDIR)/fujitsu8k.o :  $(SRCDIR)/fujitsu8k.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/fujitsu8k.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/fujitsu8k.o
+$(PROJOUTDIR)/fx7500RMAPI.o :  $(SRCDIR)/fx7500RMAPI.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/fx7500RMAPI.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/fx7500RMAPI.o
+$(PROJOUTDIR)/G2V2.o :  $(SRCDIR)/G2V2.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/G2V2.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/G2V2.o
+$(PROJOUTDIR)/ImpinjQT.o :  $(SRCDIR)/ImpinjQT.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ImpinjQT.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ImpinjQT.o
+$(PROJOUTDIR)/Inventory.o :  $(SRCDIR)/Inventory.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Inventory.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Inventory.o
+$(PROJOUTDIR)/LicManager.o :  $(SRCDIR)/LicManager.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/LicManager.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/LicManager.o
+$(PROJOUTDIR)/Monza5.o :  $(SRCDIR)/Monza5.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Monza5.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Monza5.o
+$(PROJOUTDIR)/NxpC.o :  $(SRCDIR)/NxpC.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/NxpC.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/NxpC.o
+$(PROJOUTDIR)/PhaseInfo.o :  $(SRCDIR)/PhaseInfo.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/PhaseInfo.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/PhaseInfo.o
+$(PROJOUTDIR)/RFID3EventsAutoMode.o :  $(SRCDIR)/RFID3EventsAutoMode.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/RFID3EventsAutoMode.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/RFID3EventsAutoMode.o
+$(PROJOUTDIR)/RFID3Stress.o :  $(SRCDIR)/RFID3Stress.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/RFID3Stress.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/RFID3Stress.o
+$(PROJOUTDIR)/Sprint1.o :  $(SRCDIR)/Sprint1.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Sprint1.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Sprint1.o
+$(PROJOUTDIR)/Sprint2.o :  $(SRCDIR)/Sprint2.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Sprint2.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Sprint2.o
+$(PROJOUTDIR)/Sprint3.o :  $(SRCDIR)/Sprint3.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Sprint3.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Sprint3.o
+$(PROJOUTDIR)/Support1.3.6.o :  $(SRCDIR)/Support1.3.6.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/Support1.3.6.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/Support1.3.6.o
+$(PROJOUTDIR)/TagFieldSettings.o :  $(SRCDIR)/TagFieldSettings.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TagFieldSettings.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TagFieldSettings.o
+$(PROJOUTDIR)/TestErrorAPI.o :  $(SRCDIR)/TestErrorAPI.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestErrorAPI.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestErrorAPI.o
+$(PROJOUTDIR)/TestInventory.o :  $(SRCDIR)/TestInventory.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestInventory.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestInventory.o
+$(PROJOUTDIR)/testLocateDuty.o :  $(SRCDIR)/testLocateDuty.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/testLocateDuty.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/testLocateDuty.o
+$(PROJOUTDIR)/testnegative.o :  $(SRCDIR)/testnegative.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/testnegative.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/testnegative.o
+$(PROJOUTDIR)/TestOpSequence.o :  $(SRCDIR)/TestOpSequence.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestOpSequence.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestOpSequence.o
+$(PROJOUTDIR)/TestRFID3Events.o :  $(SRCDIR)/TestRFID3Events.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestRFID3Events.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestRFID3Events.o
+$(PROJOUTDIR)/testRFID3Reads.o :  $(SRCDIR)/testRFID3Reads.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/testRFID3Reads.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/testRFID3Reads.o
+$(PROJOUTDIR)/testRFMode.o :  $(SRCDIR)/testRFMode.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/testRFMode.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/testRFMode.o	
+$(PROJOUTDIR)/TestRMAPI.o :  $(SRCDIR)/TestRMAPI.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestRMAPI.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestRMAPI.o	
+$(PROJOUTDIR)/TestSingulation.o :  $(SRCDIR)/TestSingulation.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestSingulation.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestSingulation.o	
+$(PROJOUTDIR)/TestWrites.o :  $(SRCDIR)/TestWrites.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/TestWrites.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/TestWrites.o	
+$(PROJOUTDIR)/ThreadSafeSingleReader.o :  $(SRCDIR)/ThreadSafeSingleReader.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ThreadSafeSingleReader.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ThreadSafeSingleReader.o
+$(PROJOUTDIR)/ThreadSafetyTest.o :  $(SRCDIR)/ThreadSafetyTest.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ThreadSafetyTest.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ThreadSafetyTest.o	
+$(PROJOUTDIR)/utils.o :  $(SRCDIR)/utils.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/utils.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/utils.o	
+$(PROJOUTDIR)/ValidateParameters.o :  $(SRCDIR)/ValidateParameters.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ValidateParameters.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ValidateParameters.o	
+$(PROJOUTDIR)/VerifyRegionConfigAPI.o :  $(SRCDIR)/VerifyRegionConfigAPI.cpp
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/VerifyRegionConfigAPI.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/VerifyRegionConfigAPI.o
+	
+##
+## Build Targets
+##
+
+.PHONY : prebuild 
+prebuild:
+ifneq ($(CONFIG),clean)
+ifeq (,$(wildcard $(OSPROJOUTDIR)))
+	@$(MKDIR) $(OSPROJOUTDIR)
+endif
+endif
+
+$(OUTPUTFILE): $(OBJS)
+	@echo "linking.."
+	$(CXX) $(LIBDIR) $(TARGET) -o $(OUTPUTFILE) $(OBJS) $(LIBS) $(RPATHOPTIONS)	
+
+.PHONY : linux64_clean 
+linux64_clean:
+linux64_clean: prebuild
+	$(RMDIR) $(PLATFORMOUTDIR)$(sep)linux64_release$(sep)$(PRJNAME)
+	$(RMDIR) $(PLATFORMOUTDIR)$(sep)linux64_debug$(sep)$(PRJNAME)
+	$(RM) $(PLATFORMOUTDIR)$(sep)linux64_release$(sep)$(OUTPUTFILENAME)
+	$(RM) $(PLATFORMOUTDIR)$(sep)linux64_debug$(sep)$(OUTPUTFILENAME)
+
+
+.PHONY : linux64_debug
+linux64_debug: prebuild
+linux64_debug: $(OUTPUTFILE)
+
+
+.PHONY : linux64_release
+linux64_release: prebuild
+linux64_release: $(OUTPUTFILE)
+
+
+
+.PHONY : linux64_all
+hercules_all: prebuild
+hercules_all: $(OUTPUTFILE)
+

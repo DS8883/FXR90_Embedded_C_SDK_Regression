@@ -1,0 +1,75 @@
+##
+## Makefile for ReadTagMemory executable
+##
+
+include ./common.mk
+
+ifneq ($(MAKECMDGOALS),linux64_clean)
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+endif
+
+### Edit this section for a new project : start #####
+PRJNAME					:=ReadTagMemory
+BUILDDIR				:=
+OSBUILDDIR				:=
+### Edit this section for a new project : end #####
+
+PLATFORMOUTDIR			:=$(BUILDDIR)$(GLOBALOUTDIR)/$(PLATFORM)
+PROJOUTDIR				:=$(PLATFORMOUTDIR)/$(CONFIG)/$(PRJNAME)
+OSPROJOUTDIR			:=$(OSBUILDDIR)$(GLOBALOUTDIR)$(sep)$(PLATFORM)$(sep)$(CONFIG)$(sep)$(PRJNAME)
+OUTDIR					:=$(PLATFORMOUTDIR)/$(CONFIG)
+SRCDIR					:=./Source/Manual/Cpp
+INCPLATFORMDIR			:=./
+INCROOTDIR				:=./
+OUTPUTFILENAME			:=$(PRJNAME).elf
+OUTPUTFILE				:=$(OUTDIR)/$(OUTPUTFILENAME)
+PROJECTFLAGS			:=-DUNICODE -Dlinux
+
+LIBS					:=-lrfidapi32 -lpthread -lxml2 -lrt -lltk -lssl -lcrypto -lcurl -lnettle -lz -lgmp -lhogweed -lidn -lssh2
+
+CXXFLAGS				:=$(GLOBALCXXFLAGS)
+
+INCDIR					:=-I/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/RFID_C_API/include \
+						-I./Source/Manual/header \
+
+LIBDIR					:=-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/rootfs/usr/lib \
+					-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/RFID_C_API/lib \
+					-L/home/symbol/embedded_sdk_rfid/fxr90/Zebra-FXR90_Embedded-Native-SDK-C-CPP_Linux_V1.0.0/rootfs/usr/include
+						
+				
+OBJS					+= \
+						$(PROJOUTDIR)/ReadTagMemory.o
+
+$(PROJOUTDIR)/ReadTagMemory.o :  $(SRCDIR)/ReadTagMemory.cpp
+	@$(MKDIR) $(PROJOUTDIR)
+	$(CXX) $(PROJECTFLAGS) $(INCDIR) $(SRCDIR)/ReadTagMemory.cpp $(CXXFLAGS) $(TARGET) -o $(PROJOUTDIR)/ReadTagMemory.o
+
+.PHONY: all
+all: linux64_debug
+
+.PHONY: linux64_debug
+linux64_debug: 
+	@$(MKDIR) $(PROJOUTDIR)
+	$(MAKE) -f makeReadTagMemory build_linux64 CONFIG=linux64_debug PLATFORM=linux64
+	
+.PHONY: linux64_release
+linux64_release: 
+	@$(MKDIR) $(PROJOUTDIR)
+	$(MAKE) -f makeReadTagMemory build_linux64 CONFIG=linux64_release PLATFORM=linux64
+
+.PHONY: linux64_clean
+linux64_clean:
+	@echo "Cleaning Linux64 Objects..."
+	@$(RM) $(PROJOUTDIR)/*.o
+	@$(RM) $(PROJOUTDIR)/*.d	
+	@$(RM) $(OUTPUTFILE)
+	
+.PHONY: build_linux64
+build_linux64: $(OBJS)
+	@echo "linking.."
+	$(CXX) $(LIBDIR) $(TARGET) -o $(OUTPUTFILE) $(OBJS) $(LIBS) $(RPATHOPTIONS)
+	@echo ""
+	@echo "Build Complete : " $(OUTPUTFILE)
+	@echo ""
