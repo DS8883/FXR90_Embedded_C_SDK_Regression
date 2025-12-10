@@ -398,20 +398,60 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 	wprintf(L"\n%ls Found %d standard(s)", MultiByte2WideChar(timestamp), StandardInfo.numStds);
 	
 	GetCurrentTimestamp(timestamp, sizeof(timestamp));
-	wprintf(L"\n%ls Waiting 5 seconds after GetRegionStandardList...", MultiByte2WideChar(timestamp));
-	rfid3Sleep(5000);		api3Data.rfidStatus = RFID_GetRegionStandardListA(api3Data.hReaderMgmt, regionListA.RegionNamesList[regionIndex], &StandardInfoA);
-		if (api3Data.rfidStatus != RFID_API_SUCCESS)
-		{
-			wprintf(L"\n VerifyInventoryforAllRegions: RFID_GetRegionStandardListA failed for region %d with error: %ls", regionIndex, RFID_GetErrorDescription(api3Data.rfidStatus));
-			continue;
+	wprintf(L"\n%ls Waiting 10 seconds after GetRegionStandardList...", MultiByte2WideChar(timestamp));
+	rfid3Sleep(10000);;
+
+	// CRITICAL: Check for XML corruption in StandardInfo BEFORE processing
+	BOOLEAN xmlCorrupted = FALSE;
+	for (UINT32 chk = 0; chk < StandardInfo.numStds && !xmlCorrupted; chk++) {
+		if (StandardInfo.StdsList[chk].strRegionName[0] == L'<' ||
+		    StandardInfo.StdsList[chk].strStandardName[0] == L'<' ||
+		    wcsstr(StandardInfo.StdsList[chk].strRegionName, L"<?xml") != NULL ||
+		    wcsstr(StandardInfo.StdsList[chk].strStandardName, L"<?xml") != NULL ||
+		    wcsstr(StandardInfo.StdsList[chk].strRegionName, L"<g3:") != NULL ||
+		    wcsstr(StandardInfo.StdsList[chk].strStandardName, L"<g3:") != NULL) {
+			xmlCorrupted = TRUE;
+			GetCurrentTimestamp(timestamp, sizeof(timestamp));
+			wprintf(L"\n%ls [ERROR] XML CORRUPTION DETECTED in StandardInfo[%d] for region %ls!", 
+				MultiByte2WideChar(timestamp), chk, regionList.RegionNamesList[regionIndex]);
+			wprintf(L"\n%ls   RegionName: %.50ls...", MultiByte2WideChar(timestamp), StandardInfo.StdsList[chk].strRegionName);
+			wprintf(L"\n%ls   StandardName: %.50ls...", MultiByte2WideChar(timestamp), StandardInfo.StdsList[chk].strStandardName);
+			wprintf(L"\n%ls   SKIPPING this region to prevent crash!", MultiByte2WideChar(timestamp));
 		}
+	}
+	
+	if (xmlCorrupted) {
+		GetCurrentTimestamp(timestamp, sizeof(timestamp));
+		wprintf(L"\n%ls Skipping region %d due to XML corruption", MultiByte2WideChar(timestamp), regionIndex);
+		continue;
+	}
+
+	// NOTE: Removed ANSI call RFID_GetRegionStandardListA - calling both Unicode and ANSI can cause memory corruption
+	// We only need Unicode StandardInfo, not ANSI StandardInfoA
+	// Convert Unicode region name to ANSI for logging if needed
+	char ansiRegionName[256];
+	wcstombs(ansiRegionName, StandardInfo.StdsList[0].strRegionName, 255);
+	ansiRegionName[255] = '\0';
+	
+	char ansiStandardName[256];
+	wcstombs(ansiStandardName, StandardInfo.StdsList[0].strStandardName, 255);
+	ansiStandardName[255] = '\0';
 
 	for (UINT32 standards = 0; standards < StandardInfo.numStds; standards++)
 	{
 		// Do NOT re-fetch StandardInfo/StandardInfoA here - it corrupts the data!
 		// Both are already fetched above before the loop
 		
-		fprintf(api3Data.fpCurLog, "\n\n<a name=CAPI-REGION-API-%d></a>CAPI-REGION-API-%d:\n\n<br>Description:Reading Tags for Region %s : Std:%s\n <br> Expected OutPut :Successful Set \r\n", api3Data.dwTestCaseNo, api3Data.dwTestCaseNo, StandardInfoA.StdsList[standards].strRegionName, StandardInfoA.StdsList[standards].strStandardName);
+		// Convert to ANSI for HTML logging
+		char ansiRegionName[256];
+		wcstombs(ansiRegionName, StandardInfo.StdsList[standards].strRegionName, 255);
+		ansiRegionName[255] = '\0';
+		
+		char ansiStandardName[256];
+		wcstombs(ansiStandardName, StandardInfo.StdsList[standards].strStandardName, 255);
+		ansiStandardName[255] = '\0';
+		
+		fprintf(api3Data.fpCurLog, "\n\n<a name=CAPI-REGION-API-%d></a>CAPI-REGION-API-%d:\n\n<br>Description:Reading Tags for Region %s : Std:%s\n <br> Expected OutPut :Successful Set \r\n", api3Data.dwTestCaseNo, api3Data.dwTestCaseNo, ansiRegionName, ansiStandardName);
 		fprintf(api3Data.fpCurLog, "<br>");
 		fprintf(api3Data.fpCurLog, "\n Result is : \n ");
 		
@@ -420,6 +460,14 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 		wprintf(L"\n%ls Using standard: %ls", MultiByte2WideChar(timestamp), StandardInfo.StdsList[standards].strStandardName);
 		wprintf(L"\n%ls Hopping: %ls, Channels: %u", MultiByte2WideChar(timestamp), 
 			StandardInfo.StdsList[standards].bIsHoppingConfigurable ? L"YES" : L"NO", ChannelCount);
+
+		// Validate channel count is reasonable (max 128 for any real region)
+		if (ChannelCount > 128) {
+			GetCurrentTimestamp(timestamp, sizeof(timestamp));
+			wprintf(L"\n%ls [ERROR] Suspicious ChannelCount=%u (>128) indicates data corruption!", MultiByte2WideChar(timestamp), ChannelCount);
+			wprintf(L"\n%ls Skipping this standard to prevent crash.", MultiByte2WideChar(timestamp));
+			continue;
+		}
 
 		// Detect XML corruption in standard name (API bug)
 		if (StandardInfo.StdsList[standards].strStandardName != NULL && 
@@ -481,7 +529,8 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 				rfid3Sleep(3000);
 				
 				GetCurrentTimestamp(timestamp, sizeof(timestamp));
-				wprintf(L"\n%ls [WAIT] Sleeping 60 seconds after region/frequency setting before data connection...", MultiByte2WideChar(timestamp));
+				wprintf(L"\n%ls [WAIT] Sleeping 150 seconds after region/frequency setting before data connection...", MultiByte2WideChar(timestamp));
+				rfid3Sleep(150000);
 
 				api3Data.rfidStatus = RFID_GetActiveRegionInfo(api3Data.hReaderMgmt, &activeRegionInfo);
 				wprintf(L"\n  APIRESULT:%ls RegionName:%ls StandardName:%ls",  RFID_GetErrorDescription(api3Data.rfidStatus), activeRegionInfo.strRegionName, activeRegionInfo.strStandardName);
@@ -489,8 +538,8 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 				UINT32 nTagsRead = DoInventory();
 				// DoInventory handles logout, connect, disconnect, and re-login internally
 				
-				fprintf(api3Data.fpCurLog,"\n Number of Tags Read %d \n", nTagsRead);
-				wprintf(L"\n Number of Tags Read %ld \n<br>", nTagsRead);
+				fprintf(api3Data.fpCurLog,"\n Number of Tags Read: %d \n", nTagsRead);
+				wprintf(L"\n Number of Tags Read: %ld \n<br>", nTagsRead);
 				if (nTagsRead)
 				{
 					SetLogResult(TRUE);
@@ -520,7 +569,8 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 				rfid3Sleep(2000);
 				
 				GetCurrentTimestamp(timestamp, sizeof(timestamp));
-				wprintf(L"\n%ls [WAIT] Sleeping 60 seconds before data connection...", MultiByte2WideChar(timestamp));
+				wprintf(L"\n%ls [WAIT] Sleeping 150 seconds before data connection...", MultiByte2WideChar(timestamp));
+				rfid3Sleep(150000);
 				
 				RFID_GetActiveRegionInfo(api3Data.hReaderMgmt, &activeRegionInfo);
 				GetCurrentTimestamp(timestamp, sizeof(timestamp));
@@ -529,8 +579,8 @@ BOOLEAN VerifyInventoryforAllRegions(RFID_VERSION rfidVersion)
 				UINT32 nTagsRead = DoInventory();
 				// DoInventory handles logout, connect, disconnect, and re-login internally
 				
-				wprintf(L"\n Number of Tags Read %ld \n", nTagsRead);
-				fprintf(api3Data.fpCurLog, "\n Number of Tags Read %d \n", nTagsRead);
+				wprintf(L"\n Number of Tags Read: %ld \n", nTagsRead);
+				fprintf(api3Data.fpCurLog, "\n Number of Tags Read: %d \n", nTagsRead);
 
 				if (nTagsRead)
 				{

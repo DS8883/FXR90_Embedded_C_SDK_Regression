@@ -1,0 +1,10 @@
+# Build artifacts
+BuildResults/
+
+# Object files
+*.o
+*.elf
+
+# Other build files
+*.so
+*.a
