@@ -3,8 +3,9 @@
 📝 Overview
 Welcome! This repository hosts a comprehensive regression and manual test suite for the FXR90 Embedded RFID SDK. The primary goal is to validate the functionality, robustness, and performance of the RFID reader APIs. Our tests cover everything from region support and tag access operations to critical event handling.
 
-📂 Directory Structure
-'''
+## 📂 Directory Structure
+
+```text
 .
 ├── Source/
 │   ├── Manual/
@@ -14,7 +15,7 @@ Welcome! This repository hosts a comprehensive regression and manual test suite 
 │       └── Cpp/      # Automated regression tests
 ├── rfid3depends/     # API headers and required libraries
 └── BuildResults/     # Build artifacts (ignored by .gitignore)
-'''
+
 
 🚀 Key Features:
 🌍 Region Configuration & Validation: Ensures region-specific settings are configured and compliant.
