@@ -4,6 +4,7 @@
 Welcome! This repository hosts a comprehensive regression and manual test suite for the FXR90 Embedded RFID SDK. The primary goal is to validate the functionality, robustness, and performance of the RFID reader APIs. Our tests cover everything from region support and tag access operations to critical event handling.
 
 📂 Directory Structure
+'''
 .
 ├── Source/
 │   ├── Manual/
@@ -13,6 +14,7 @@ Welcome! This repository hosts a comprehensive regression and manual test suite 
 │       └── Cpp/      # Automated regression tests
 ├── rfid3depends/     # API headers and required libraries
 └── BuildResults/     # Build artifacts (ignored by .gitignore)
+'''
 
 🚀 Key Features:
 🌍 Region Configuration & Validation: Ensures region-specific settings are configured and compliant.
@@ -54,7 +56,6 @@ SecureMode: 0
 ⚙️ A Closer Look at Access Operations
 This suite provides deep coverage of RFID tag access operations.
 
-|-------------------------|---------------------------------------------------------------------------------------------------------------------|
 |   Feature               | Description                                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **Read/Write Access**   | Utilizes structures like `READ_ACCESS_PARAMS` and `WRITE_ACCESS_PARAMS` for core operations.                        |
@@ -62,7 +63,6 @@ This suite provides deep coverage of RFID tag access operations.
 | **Event Handling**      | Employs semaphores and callbacks for `ACCESS_START_EVENT` and `ACCESS_STOP_EVENT` to ensure proper synchronization. |
 | **Security**            | Includes tests for password management, lock/unlock operations, and authentication (G2V2, ImpinjQT, NXP).           |
 | **Performance Metrics** | Tracks success/fail counts and logs detailed results for benchmarking.                                              |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------|
 
 Example Access Flow:
 1. Initialize the Access Sequence.
