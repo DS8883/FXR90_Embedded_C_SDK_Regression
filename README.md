@@ -15,7 +15,7 @@ Welcome! This repository hosts a comprehensive regression and manual test suite 
 │       └── Cpp/      # Automated regression tests
 ├── rfid3depends/     # API headers and required libraries
 └── BuildResults/     # Build artifacts (ignored by .gitignore)
-
+```
 
 🚀 Key Features:
 🌍 Region Configuration & Validation: Ensures region-specific settings are configured and compliant.
